@@ -40,7 +40,7 @@ spec:
           livenessProbe:
             failureThreshold: 3
             httpGet:
-              path: /
+              path: /very
               port: 8080
               scheme: HTTP
             initialDelaySeconds: 10
@@ -50,7 +50,7 @@ spec:
           readinessProbe:
             failureThreshold: 3
             httpGet:
-              path: /very
+              path: /
               port: 8080
               scheme: HTTP
             initialDelaySeconds: 15
